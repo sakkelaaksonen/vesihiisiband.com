@@ -15,7 +15,7 @@ html,
 body {
   overflow: hidden;
   background-color: #000;
-  background-image: url("./img/vesihiisi-text.jpg");
+  background-image: url("./img/vesihiisi-website-greensun-bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -66,8 +66,8 @@ body {
 }
 
 .huerotate {
-  background-color: red;
-  filter: hue-rotate(240deg);
+  background-color: green;
+  filter: hue-rotate(180deg);
   animation: rotatehue 200s infinite alternate;
   opacity: 0.18;
 }
