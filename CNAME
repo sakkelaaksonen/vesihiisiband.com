@@ -1,1 +1,1 @@
-vesihiisiband.net
+vesihiisiband.surge.sh
