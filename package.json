@@ -1,0 +1,22 @@
+{
+  "name": "vesihiisiband.net",
+  "version": "1.0.0",
+  "description": "vesihiisiband.net",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sakkelaaksonen/vesihiisiband.net.git"
+  },
+  "keywords": [
+    "vesihiisiband"
+  ],
+  "author": "Sakari Laaksonen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sakkelaaksonen/vesihiisiband.net/issues"
+  },
+  "homepage": "https://github.com/sakkelaaksonen/vesihiisiband.net#readme"
+}
