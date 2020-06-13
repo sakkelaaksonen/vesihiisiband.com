@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/sakkelaaksonen/vesihiisiband.net/issues"
   },
-  "homepage": "https://github.com/sakkelaaksonen/vesihiisiband.net#readme"
+  "homepage": "https://github.com/sakkelaaksonen/vesihiisiband.net#readme",
+  "dependencies": {
+    "surge": "^0.21.3"
+  }
 }

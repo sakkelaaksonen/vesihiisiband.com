@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "Blackout Two AM";
+  src: url("./font/blackout_two_am-webfont.eot");
+  src: url("./font/blackout_two_am-webfontt.eot?#iefix")
+      format("embedded-opentype"),
+    url("./font/blackout_two_am-webfont.woff") format("woff"),
+    url("./font/blackout_two_am-webfontt.ttf") format("truetype"),
+    url("./font/blackout_two_am-webfont.svg#blackout_two_am-webfont")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  overflow: hidden;
+  background-color: #000;
+  background-image: url("./img/vesihiisi-text.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+
+  font-family: "Blackout Two AM";
+}
+
+/*.void-bg {
+  background-image: url("./img/void-of-course-small-night.jpg");
+  background-repeat: no-repeat;
+  background-position: center 30vh;
+  background-size: contain;
+}*/
+
+.fullScreen {
+  height: 100vh;
+  width: 100vw;
+}
+
+.absoluteScreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.grumbaum-img {
+  max-height: 100vh;
+  position: absolute;
+  max-width: 100vw;
+  transform: scale(1.5);
+  top: 20vh;
+}
+
+.grumbaum {
+  filter: invert(80%);
+  opacity: 0.2;
+}
+
+.grumbaum-rotate {
+  animation: rotateblock 300s infinite alternate;
+  transform-origin: center center;
+}
+
+.huerotate {
+  background-color: red;
+  filter: hue-rotate(240deg);
+  animation: rotatehue 200s infinite alternate;
+  opacity: 0.18;
+}
+
+.link {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  outline: none;
+}
+
+h1.void {
+  color: white;
+  transform: scale(1);
+  transition: transform 0.5s ease-out;
+}
+
+.voc-emoji {
+  font-size: 8vw;
+  transform: translateY(-8vh);
+  display: block;
+}
+
+.void-text {
+  opacity: 0.9;
+  display: block;
+}
+
+.void-text-mirror {
+  transform: rotateX(180deg);
+  margin-top: -1.5rem;
+}
+
+.void-text-mirror {
+  font-size: 97%;
+  opacity: 0.8;
+}
+
+.void-text-mirror + .void-text-mirror {
+  font-size: 95%;
+  filter: invert(100%);
+  opacity: 0.7;
+}
+
+/*.void-text-mirror {
+  display:none;
+ }
+
+/*
+
+ PureCSS starfield
+ https://codepen.io/kikeur/pen/KpgYdG 
+
+*/
+.space,
+.stars {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.stars {
+  background-image: radial-gradient(
+      2px 2px at 20px 30px,
+      #eee,
+      rgba(0, 0, 0, 0)
+    ),
+    radial-gradient(2px 2px at 40px 70px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 90px 40px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 130px 80px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0, 0, 0, 0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  animation: starzoom 10s infinite;
+  opacity: 0;
+}
+
+.stars:nth-child(1) {
+  background-position: 50% 50%;
+  animation-delay: 0s;
+}
+.stars:nth-child(2) {
+  background-position: 20% 60%;
+  animation-delay: 1s;
+}
+.stars:nth-child(3) {
+  background-position: -20% -30%;
+  animation-delay: 2s;
+}
+.stars:nth-child(4) {
+  background-position: 40% -80%;
+  animation-delay: 3s;
+}
+.stars:nth-child(5) {
+  background-position: -20% 30%;
+  animation-delay: 6s;
+}
+
+.desktop {
+  display: none;
+}
+/*@media screen and (orientation:portrait) { … }*/
+@media screen and (orientation: landscape) and (max-width: 899px) {
+  body {
+    background: white;
+  }
+  .void-bg {
+    background-blend-mode: difference;
+    background-position: center center;
+  }
+  .landscape-filter {
+    filter: invert(100%);
+  }
+  .grumbaum-img {
+    top: 0;
+    display: block;
+    position: static;
+    margin: 0 auto;
+  }
+}
