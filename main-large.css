@@ -1,18 +1,11 @@
-
-/*tablets and big phones*/
-@media (min-width: 900px) { 
-/*@media (min-width: 1200px) { */
-
-.void-bg {
-    background-image: url('./img/void-of-course-night.jpg');
-    background-position: center center;
-  }
+@media (min-width: 900px) {
+  /*@media (min-width: 1200px) { */
 
   .grumbaum-zoomer {
     animation: grumbaumzoominout 400s infinite;
-    transform-origin:center center;
+    transform-origin: center center;
   }
- 
+
   .grumbaum-img {
     margin: 0 auto;
     position: static;
@@ -30,49 +23,4 @@
   .mobile {
     display: none;
   }
-  
-
-  h1.void {
-    color: white;
-    padding: 4rem 0;
-    transform: scale(1);
-    transition: transform 0.5s ease-out;
-  }
-  
-  .voc-emoji {
-    font-size: 2vw;
-  }
-
-  .void-text {
-    opacity: 0;
-    display: block;
-  }
-
-  .void-text-mirror {
-    transform: rotateX(180deg);
-    margin-top:-1.5rem;
-  } 
-
-  .void-text-mirror {
-    font-size:97%;
-  }
-
-  .void-text-mirror + .void-text-mirror {
-    font-size:95%;
-    filter: invert(100%);
-    opacity:0;
-  }
-
-
-  .link:hover .void {
-    transform: scale(3) translateY(5rem);
-    transition: transform 6s ease-out;
-  }
-
-  .link:hover .void-text {
-    transition: opacity 6s ease-out;
-    opacity: 0.7;
-    /*animation: getvoided 6s;*/
-  }
 }
-

@@ -14,30 +14,24 @@
 html,
 body {
   overflow: hidden;
-  background-color: #000;
-  background-image: url("./img/vesihiisi-website-greensun-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
   padding: 0px;
   margin: 0px;
   width: 100%;
   height: 100%;
-
   font-family: "Blackout Two AM";
 }
 
-/*.void-bg {
-  background-image: url("./img/void-of-course-small-night.jpg");
+body {
+  background-color: #000400;
+  background-image: url("./img/vesihiisi-website-greensun-bg.jpg");
   background-repeat: no-repeat;
-  background-position: center 30vh;
+  background-position: center center;
   background-size: contain;
-}*/
-
-.fullScreen {
+}
+/*.fullScreen {
   height: 100vh;
   width: 100vw;
-}
+}*/
 
 .absoluteScreen {
   position: absolute;
@@ -114,10 +108,6 @@ h1.void {
   opacity: 0.7;
 }
 
-/*.void-text-mirror {
-  display:none;
- }
-
 /*
 
  PureCSS starfield
@@ -174,23 +164,4 @@ h1.void {
 
 .desktop {
   display: none;
-}
-/*@media screen and (orientation:portrait) { … }*/
-@media screen and (orientation: landscape) and (max-width: 899px) {
-  body {
-    background: white;
-  }
-  .void-bg {
-    background-blend-mode: difference;
-    background-position: center center;
-  }
-  .landscape-filter {
-    filter: invert(100%);
-  }
-  .grumbaum-img {
-    top: 0;
-    display: block;
-    position: static;
-    margin: 0 auto;
-  }
 }
