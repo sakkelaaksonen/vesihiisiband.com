@@ -23,7 +23,7 @@ body {
 
 body {
   background-color: #000400;
-  background-image: url("./img/vesihiisi-website-greensun-bg.jpg");
+  background-image: url("./img/vesihiisi-website-greensun-bg-small.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -33,7 +33,7 @@ body {
   width: 100vw;
 }*/
 
-.absoluteScreen {
+.absolute-screen {
   position: absolute;
   top: 0;
   left: 0;
@@ -61,51 +61,9 @@ body {
 
 .huerotate {
   background-color: green;
-  filter: hue-rotate(180deg);
-  animation: rotatehue 200s infinite alternate;
+  filter: hue-rotate(360deg);
+  animation: rotatehue 100s infinite alternate;
   opacity: 0.18;
-}
-
-.link {
-  position: absolute;
-  top: 0;
-  text-align: center;
-  width: 100%;
-  text-decoration: none;
-  outline: none;
-}
-
-h1.void {
-  color: white;
-  transform: scale(1);
-  transition: transform 0.5s ease-out;
-}
-
-.voc-emoji {
-  font-size: 8vw;
-  transform: translateY(-8vh);
-  display: block;
-}
-
-.void-text {
-  opacity: 0.9;
-  display: block;
-}
-
-.void-text-mirror {
-  transform: rotateX(180deg);
-  margin-top: -1.5rem;
-}
-
-.void-text-mirror {
-  font-size: 97%;
-  opacity: 0.8;
-}
-
-.void-text-mirror + .void-text-mirror {
-  font-size: 95%;
-  filter: invert(100%);
-  opacity: 0.7;
 }
 
 /*
@@ -164,4 +122,16 @@ h1.void {
 
 .desktop {
   display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
 }
