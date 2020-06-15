@@ -5,9 +5,10 @@
     transform-origin: center center;
   }
 
-  /*  .grumbaum__img {
-    margin: 0 auto;
-    position: static;
+  .desktop {
     display: block;
-  }*/
+  }
+  .mobile {
+    display: none;
+  }
 }
