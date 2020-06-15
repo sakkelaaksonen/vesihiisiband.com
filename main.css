@@ -115,11 +115,6 @@ body {
   opacity: 0.18;
 }
 
-.grumbaum__img--rotate {
-  animation: rotateblock 300s infinite alternate;
-  transform-origin: center center;
-}
-
 .grumbaum__img {
   position: absolute;
   transform: scale(1.5);
