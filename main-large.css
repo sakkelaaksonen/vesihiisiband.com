@@ -1,26 +1,13 @@
 @media (min-width: 767px) {
-  /*@media (min-width: 1200px) { */
-
-  .grumbaum-zoomer {
-    animation: grumbaumzoominout 400s infinite;
+  /*@media (min-width: 1200px) {*/
+  .grumbaum--zoomer {
+    animation: grumbaumzoominout 200s infinite;
     transform-origin: center center;
   }
 
-  .grumbaum-img {
+  /*  .grumbaum__img {
     margin: 0 auto;
     position: static;
     display: block;
-  }
-
-  .void-zoomer {
-    animation: voidzoominout 100s infinite;
-  }
-
-  .desktop {
-    display: block;
-  }
-
-  .mobile {
-    display: none;
-  }
+  }*/
 }
