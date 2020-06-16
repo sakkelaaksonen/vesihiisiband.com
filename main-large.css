@@ -5,6 +5,11 @@
     transform-origin: center center;
   }
 
+  .grumbaum__img--rotate {
+    animation: rotateblock 300s infinite alternate;
+    transform-origin: center center;
+  }
+
   .desktop {
     display: block;
   }
