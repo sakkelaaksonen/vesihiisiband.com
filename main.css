@@ -98,14 +98,16 @@ body {
   left: 0;
   height: 100vh;
   width: 100vw;
-  /* bottom:0;
-  
-  right: 0; */
+  overflow: hidden;
+}
+
+.grumbaum__img--wrapper {
+  overflow:hidden;
 }
 
 .grumbaum__link {
+  width: 100vw;
   display: inline-flex;
-  /* align-items: center; */
   justify-content: center;
 }
 
@@ -151,21 +153,11 @@ body {
   }
 }
 
-
-
 @media (min-width: 1200px) {
-  
+
    .grumbaum--zoomer {
     animation: grumbaumzoominout 200s infinite;
     transform-origin: center center;
+    filter: saturate(0.4);
   }
-
-
-/* 
-  .desktop {
-    display: block;
-  }
-  .mobile {
-    display: none;
-  } */
 } 
