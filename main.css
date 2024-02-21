@@ -1,3 +1,11 @@
+:root {
+  --min-width: 320px;
+  --link-bottom-near: translateY(-2rem);
+  --link-bottom-far: translateY(-4rem);
+  --logo-small: url("./img/vesihiisi-website-greensun-bg-800.webp");
+  --logo-large: url("./img/vesihiisi-website-greensun-bg.webp");
+}
+
 @font-face {
   font-family: "Blackout Two AM";
   src: url("./font/blackout_two_am-webfont.eot");
@@ -23,11 +31,15 @@ body {
 
 body {
   background-color: #000400;
-  background-image: url("./img/vesihiisi-website-greensun-bg-small.jpg");
+  background-image:var( --logo-small);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
 }
+
+
+
+
 /*
 
  PureCSS starfield
@@ -128,7 +140,7 @@ body {
   align-items: end;
   color:white;
   gap:2rem;
-  transform: translateY(-4rem);
+  transform: var(--link-bottom-near)
 }
 
 .links a {
@@ -136,13 +148,11 @@ body {
   height:50px;
   overflow:hidden;
   background-repeat: no-repeat;
-  font-size: 0;
-  filter: invert(1) blur(1px);
+  font-size: 0; 
 }
 
-.links a:hover {
-  filter: invert(0.8) blur(0px) hue-rotate(32deg);
-  transition: filter 0.2s ease-in;
+.links a {
+  filter: invert(0.9);
 }
 
 .facebook {
@@ -169,16 +179,20 @@ body {
   }
 }
 
+@media (orientation: landscape) {
+  .grumbaum__img {
+    max-height: 100vh;
+    max-width: auto;
+   }
+
+}
+
 @media (orientation: landscape) and (max-device-width: 1200px) {
 
   .grumbaum__img--wrapper { 
     height: 100vh;
   }
 
-  .grumbaum__img {
-   max-height: 100vh;
-   max-width: auto;
-  }
   .grumbaum__link {
     align-items: inherit;
   }
@@ -187,15 +201,39 @@ body {
 
     transform: translateY(-1rem);
   }
-  
 
 }
 
 @media (min-width: 1200px) {
 
+  body {
+    background-image:var( --logo-large);
+  }
+  
+  .grumbaum__img--rotate {
+    animation: rotateblock 250s infinite alternate;
+    transform-origin: center center;
+  }
+
    .grumbaum--zoomer {
-    animation: grumbaumzoominout 200s infinite;
+    animation: grumbaumzoominout 150s infinite;
     transform-origin: center center;
     filter: saturate(0.4);
+  }
+
+  .links {
+    transform: var(--link-bottom-far)
+  }
+  
+  .links a {
+    filter: invert(0.8);
+    transition: filter 0.5s ease-in;
+  
+  
+  }
+  
+  .links a:hover {
+    filter: invert(1);
+    transition: filter 0.5s ease-out;
   }
 } 
