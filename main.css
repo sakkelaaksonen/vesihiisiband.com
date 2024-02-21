@@ -2,8 +2,8 @@
   --min-width: 320px;
   --link-bottom-near: translateY(-2rem);
   --link-bottom-far: translateY(-4rem);
-  --logo-small: url("./img/vesihiisi-website-greensun-bg-800.webp");
-  --logo-large: url("./img/vesihiisi-website-greensun-bg.webp");
+  --logo-small: url("./img/vesihiisi-website-greensun-bg-trans-600.webp");
+  --logo-large: url("./img/vesihiisi-website-greensun-bg-trans-1200.webp");
 }
 
 @font-face {

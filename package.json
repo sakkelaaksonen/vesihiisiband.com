@@ -1,7 +1,7 @@
 {
 
   "name": "vesihiisiband.com",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "vesihiisiband.com",
   "main": "index.js",
   "scripts": {
