@@ -3,7 +3,7 @@
   "name": "vesihiisiband.com",
   "version": "1.0.3",
   "description": "vesihiisiband.com",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"No test specified\" && exit 1"
   },
