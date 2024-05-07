@@ -3,10 +3,6 @@
   "name": "vesihiisiband.com",
   "version": "1.0.3",
   "description": "vesihiisiband.com",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"No test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sakkelaaksonen/vesihiisiband.com.git"
@@ -19,7 +15,5 @@
   "bugs": {
     "url": "https://github.com/sakkelaaksonen/vesihiisiband.com/issues"
   },
-  "homepage": "https://github.com/sakkelaaksonen/vesihiisiband.com#readme",
-  "dependencies": {
-  }
+  "homepage": "https://github.com/sakkelaaksonen/vesihiisiband.com#readme"
 }
