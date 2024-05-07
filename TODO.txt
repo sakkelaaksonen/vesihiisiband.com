@@ -1,7 +1,4 @@
--TODO.txt
-
-
-- keywords, desc, etc
-- 
-
-
+TODO.txt
+7.5.2024
+Hosting change from surge to kinsta for https-support
+surge ip: 45.55.110.124
