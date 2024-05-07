@@ -1,19 +1,36 @@
 {
 
   "name": "vesihiisiband.com",
-  "version": "1.0.3",
+
+  "version": "1.1.0",
+
   "description": "vesihiisiband.com",
+
   "repository": {
+
     "type": "git",
+
     "url": "git+https://github.com/sakkelaaksonen/vesihiisiband.com.git"
+
   },
+
   "keywords": [
+
     "vesihiisiband"
+
   ],
+
   "author": "Sakari Laaksonen",
+
   "license": "MIT",
+
   "bugs": {
+
     "url": "https://github.com/sakkelaaksonen/vesihiisiband.com/issues"
+
   },
+
   "homepage": "https://github.com/sakkelaaksonen/vesihiisiband.com#readme"
+
 }
+
