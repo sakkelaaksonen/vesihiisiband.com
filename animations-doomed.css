@@ -1,0 +1,101 @@
+@keyframes rotatehue {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    filter: hue-rotate(359deg);
+  }
+
+  to {
+    filter: hue-rotate(0deg);
+  }
+}
+
+@keyframes rotateblock {
+  0% {
+    transform: perspective(800px) rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+  }
+
+  25% {
+    transform: perspective(800px) rotateZ(90deg) rotateX(15deg) rotateY(-10deg);
+  }
+
+  50% {
+    transform: perspective(800px) rotateZ(180deg) rotateX(0deg) rotateY(20deg);
+  }
+
+  75% {
+    transform: perspective(800px) rotateZ(270deg) rotateX(-15deg) rotateY(-10deg);
+  }
+
+  100% {
+    transform: perspective(800px) rotateZ(360deg) rotateX(0deg) rotateY(0deg);
+  }
+}
+
+@keyframes grumbaumzoominout {
+  0% {
+    transform: scale(0.9, 0.9);
+  }
+
+  36% {
+    transform: scale(1.8, 1.8);
+  }
+
+  78% {
+    transform: scale(0.5, 0.5);
+  }
+
+  100% {
+    transform: scale(0.9, 0.9);
+  }
+}
+
+@keyframes starzoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+    animation-timing-function: ease-in;
+  }
+
+  85% {
+    opacity: 1;
+    transform: scale(2.8);
+    animation-timing-function: linear;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(3.5);
+  }
+}
+
+
+@keyframes videofade {
+  0% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes logofade {
+  0% {
+    opacity: 0.01;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.01;
+  }
+}
